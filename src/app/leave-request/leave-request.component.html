@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="header">
+      <span>Welcome {{ adminName }}</span>
+      <button (click)="logout()" class="logout-button">Logout</button>
+    </div>
+  
+    <div class="profile">
+      <img [src]="img" alt="Student Profile" class="profile-img" />
+      <div class="profile-details">
+        <p><strong>Name:</strong> {{ studentName }}</p>
+        <p><strong>Reason:</strong> {{ leaveReason }}</p>
+        <p><strong>From:</strong> {{ leaveFrom }}</p>
+        <p><strong>Days:</strong> {{ leaveDays }}</p>
+        <p><strong>Applied On:</strong> {{ appliedOn }}</p>
+      </div>
+    </div>
+  
+    <div class="actions">
+      <button (click)="acceptLeave()" class="accept-btn">Accept</button>
+      <button (click)="rejectLeave()" class="reject-btn">Reject</button>
+      <div class="status">
+        <span *ngIf="leaveStatus === 'accepted'" class="status-accepted">✔️ Accepted</span>
+        <span *ngIf="leaveStatus === 'rejected'" class="status-rejected">❌ Rejected</span>
+      </div>
+    </div>
+  
+    <div class="filter-section">
+      <input [(ngModel)]="filter" placeholder="Filter by name..." />
+    </div>
+  </div>
+  

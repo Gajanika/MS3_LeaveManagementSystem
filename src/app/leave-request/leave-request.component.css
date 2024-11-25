@@ -1,0 +1,70 @@
+.container {
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logout-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+  }
+  
+  .profile {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-details {
+    flex: 1;
+  }
+  
+  .actions {
+    margin-top: 20px;
+  }
+  
+  .accept-btn, .reject-btn {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .accept-btn {
+    background-color: green;
+    color: white;
+  }
+  
+  .reject-btn {
+    background-color: red;
+    color: white;
+  }
+  
+  .status {
+    margin-top: 10px;
+  }
+  
+  .status-accepted {
+    color: green;
+  }
+  
+  .status-rejected {
+    color: red;
+  }
+  
+  .filter-section {
+    margin-top: 20px;
+  }
+  
